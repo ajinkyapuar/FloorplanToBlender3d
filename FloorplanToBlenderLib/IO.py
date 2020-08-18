@@ -19,7 +19,7 @@ def generate_config_file():
     '''
     config = configparser.ConfigParser()
     config['DEFAULT'] = {'image_path': 'Examples/example.png',
-    'blender_installation_path': 'C:\\Program Files\\Blender Foundation\\Blender\\blender.exe',
+    'blender_installation_path': '/Applications/blender.app/Contents/MacOS/blender',
     'file_structure': '[[[0,0,0], [0,0,0], [0,0,0]], [[0,0,0], [0,0,0], [0,0,0]], [[0,0,0], [0,0,0], [0,0,0]]]',
     'mode': 'simple'}
     with open('config.ini', 'w') as configfile:

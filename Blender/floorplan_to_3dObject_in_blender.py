@@ -138,7 +138,7 @@ def main(argv):
     # Remove starting object cube
     # Select all
     objs = bpy.data.objects
-    objs.remove(objs["Cube"], do_unlink=True)
+    objs.remove(objs["Cube"])
 
     if(len(argv) > 6): # Note YOU need 7 arguments!
         program_path = argv[5]
@@ -160,6 +160,7 @@ def main(argv):
     '''
     bpy.ops.wm.save_as_mainfile(filepath=program_path + "/Target" +"/floorplan.blend")
    
+    bpy.ops.export_scene.fbx(filepath=program_path + "/Target/floorplan.fbx")
 
     '''
     Send correct exit code

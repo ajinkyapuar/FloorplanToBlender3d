@@ -17,7 +17,7 @@ if __name__ == "__main__":
 
     # Set required default paths
     image_path = "" # path the your image
-    blender_install_path = "" # path to blender installation folder
+    blender_install_path = "/Applications/blender.app/Contents/MacOS/blender" # path to blender installation folder
 
     image_path, blender_install_path, file_structure, mode = IO.config_get_default()
 
